@@ -9,13 +9,13 @@ import { UserPermissions } from './User';
     template: `<div>
                     <h1>Пример приложения</h1>
                     <login-cmp *ngIf="!isAutorised" (onAutorise)="onAutorise($event)"></login-cmp>
-                    <router-outlet></router-outlet>
+                    <router-outlet *ngIf="isAutorised" ></router-outlet>
                </div>`,
     providers: [HttpService]
 })
 
 export class AppComponent { 
-    private isAutorised: boolean = false;
+    isAutorised: boolean = false;
 
     constructor(private router: Router) { }
 
