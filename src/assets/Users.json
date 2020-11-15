@@ -1,0 +1,14 @@
+{
+	"userList": [
+		{
+			"Name": "User",
+			"Password": "user",
+			"Permissions": 2
+		},
+		{
+			"Name": "Admin",
+			"Password": "admin",
+			"Permissions": 1
+		}
+	]
+}
