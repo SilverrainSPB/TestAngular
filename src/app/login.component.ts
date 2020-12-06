@@ -5,12 +5,12 @@ import { User, UserPermissions } from './User';
 @Component({
     selector: 'login-cmp',
     template: `     <label>Введите логин:</label>
-                    <input [(ngModel)]="name" placeholder="some login"/>
+                    <input id="User_login" [(ngModel)]="name" placeholder="some login"/>
                     <br>
                     <label>Введите пароль:</label>
-                    <input [(ngModel)]="password" placeholder="some password"/>
+                    <input id="User_password" [(ngModel)]="password" placeholder="some password"/>
                     <br>
-                    <button (click)="authorise()">Sign in</button>`,
+                    <button id="login" (click)="authorise()">Sign in</button>`,
     providers: [HttpService]
 })
 export class LoginComponent implements OnInit {
